@@ -40,8 +40,8 @@ with open(csv_analysis, 'w') as bank_analysis:
         print("Total Months: ", len(profits), file=x)
         print("Total: $", int(sum(profits)), file=x)
         print("Average Change: $", "%.2f" % (sum(profits_average) / len(profits_average)), file=x)
-        print("Greatest Increase in Profits: ", months[profits_change.index(max(profits_change))] + str(" ($") + str(max(profits_change))+ str(")"), file=x)
-        print("Greatest Decrease in Profits: ", months[profits_change.index(min(profits_change))] + str(" ($") + str(min(profits_change))+ str(")"), file=x)
+        print("Greatest Increase in Profits: ", months[profits_change.index(max(profits_change))] + str(" ($") + str(int(max(profits_change)))+ str(")"), file=x)
+        print("Greatest Decrease in Profits: ", months[profits_change.index(min(profits_change))] + str(" ($") + str(int(min(profits_change)))+ str(")"), file=x)
 
 
 
